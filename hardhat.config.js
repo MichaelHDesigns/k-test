@@ -29,10 +29,10 @@ module.exports = {
       url: `https://rpc0.altcoinchain.org/rpc`,
       accounts: `0x${process.env.PRIVATE_KEY}`
     },
-    mainnet: {
-      url: `https://polygon-mainnet.infura.io/v3/${projectId}`,
-      accounts: [privateKey]
-    },
+ //   mainnet: {
+ //     url: `https://polygon-mainnet.infura.io/v3/${projectId}`,
+ //     accounts: [privateKey]
+ //   },
   },
   solidity: "0.8.4",
 };
