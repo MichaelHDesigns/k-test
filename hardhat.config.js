@@ -27,7 +27,7 @@ module.exports = {
     },
     mumbai: {
       url: `https://rpc0.altcoinchain.org/rpc`,
-      accounts: `0x${process.env.PRIVATE_KEY}`
+      accounts: [process.env.PRIVATE_KEY.toString()]
     },
  //   mainnet: {
  //     url: `https://polygon-mainnet.infura.io/v3/${projectId}`,
