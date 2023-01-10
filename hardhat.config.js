@@ -27,7 +27,7 @@ module.exports = {
     },
     mumbai: {
       url: `https://rpc0.altcoinchain.org/rpc`,
-      accounts: [privateKey]
+      accounts: []
     //  accounts: [process.env.PRIVATE_KEY.toString()]
     },
  //   mainnet: {
