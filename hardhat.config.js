@@ -1,6 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 const fs = require("fs")
-const privateKey = fs.readFileSync(".secret").toString();
+require('dotenv').config()
+//const privateKey = fs.readFileSync(".secret").toString();
 const projectId = "2JiDPAHVQOfT2Q6vywSZfLS0pU9"
 
 // This is a sample Hardhat task. To learn how to create your own go to
@@ -26,7 +27,7 @@ module.exports = {
     },
     mumbai: {
       url: `https://rpc0.altcoinchain.org/rpc`,
-      accounts: [privateKey]
+      accounts: `0x${process.env.PRIVATE_KEY}`
     },
     mainnet: {
       url: `https://polygon-mainnet.infura.io/v3/${projectId}`,
